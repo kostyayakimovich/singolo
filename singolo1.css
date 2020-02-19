@@ -1,0 +1,13 @@
+.wrapper {
+  width: 1020px;
+}
+.header {
+  height: 90px;
+  display: flex;
+}
+.slider {
+  height: 600px;
+}
+.footer {
+  height: 500px;
+}
