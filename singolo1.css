@@ -74,7 +74,8 @@
   justify-content: space-between;
 }
 .slider_control_left {
-  margin-left: 40px;
+  margin-left: 42px;
+  margin-top: 16px;
 }
 .slider_control_left:hover,
 .slider_control_right:hover {
@@ -82,18 +83,21 @@
 }
 .slider_control_right {
   margin-right: 40px;
+  margin-top: 16px;
 }
 .slider_images {
-  margin-top: 53px;
+  margin-top: 15px;
+  margin-left: 1px;
+
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .vertical_phone {
-  padding: 37.5px;
+  padding: 38px 35px;
 }
 .horisontal_phone {
-  padding: 37.5px;
+  padding: 38px;
 }
 .footer {
   height: 500px;
