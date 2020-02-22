@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
 }
-
 .header {
   height: 89px;
   width: 1020px;
@@ -15,7 +14,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 .logo {
   margin-left: 39px;
   padding-top: 4px;
@@ -27,8 +25,7 @@
   font-size: 24px;
   line-height: 6px;
   color: #ffffff;
-  font-family: "LatoBold";
-  font-weight: 700;
+  font-family: "LatoBold", Verdana, serif;
   text-transform: uppercase;
   letter-spacing: 0.05px;
 }
@@ -45,10 +42,8 @@
   justify-content: space-between;
   letter-spacing: -0.25px;
   font-size: 12px;
-
   color: #ffffff;
-  font-family: "LatoBold";
-  font-weight: 700;
+  font-family: "LatoBold", Verdana, serif;
 }
 .navigation li {
   list-style-type: none;
@@ -61,7 +56,6 @@
 .navigation li:first-child {
   color: #f06c64;
 }
-
 .slider {
   height: 594px;
   width: 1020px;
@@ -74,6 +68,7 @@
   justify-content: space-between;
 }
 .slider_control_left {
+  margin-bottom: -2px;
   margin-left: 42px;
   margin-top: 16px;
 }
@@ -82,6 +77,7 @@
   filter: invert(1);
 }
 .slider_control_right {
+  margin-bottom: -2px;
   margin-right: 40px;
   margin-top: 16px;
 }
@@ -97,9 +93,10 @@
 }
 .horisontal_phone {
   padding: 38px;
+  margin-bottom: 1px;
 }
 .servis_content {
-  height: 488px;
+  height: 494px;
   width: 1020px;
   background-color: #f2f2f2;
   border-bottom: 6px solid #ffffff;
@@ -111,10 +108,10 @@
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 900;
   text-align: left;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.23px;
   padding-bottom: 28px;
 }
 .servis_content_description p {
@@ -123,9 +120,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
-  font-family: "LatoLight";
-  font-weight: 300;
-  font-stretch: extra-condensed;
+  font-family: "LatoLight", Verdana, serif;
   letter-spacing: -0.21px;
   text-align: justify;
 }
@@ -144,17 +139,18 @@
   display: flex;
 }
 .content_item img {
-  padding-right: 13px;
+  padding-right: 14px;
   margin-top: 2px;
 }
 .content_item_text {
-  margin-left: 7px;
+  margin-left: 8px;
+  padding-right: 6px;
 }
 .content_item_text h3 {
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 900;
   text-align: left;
   letter-spacing: -0.02px;
@@ -166,7 +162,6 @@
   font-size: 12px;
   line-height: 22px;
   color: #767e9e;
-  font-family: "LatoRegular";
-  font-weight: 400;
+  font-family: "LatoRegular", Verdana, serif;
   text-align: justify;
 }
