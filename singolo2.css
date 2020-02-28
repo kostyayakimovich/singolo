@@ -190,3 +190,6 @@ images_portfolio {
   list-style-type: none;
   cursor: pointer;
 }
+.links_social_media img:hover {
+  filter: invert(1);
+}
