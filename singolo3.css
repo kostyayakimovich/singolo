@@ -12,10 +12,9 @@
   width: 940px;
   margin: auto;
 }
+
 .header_registration {
-  padding: 68px 0 29px 0;
-}
-.header_registration h2 {
+  padding-top: 68px;
   font-size: 30px;
   line-height: 18px;
   color: #f0d8d9;
@@ -25,9 +24,8 @@
   letter-spacing: -0.006em;
 }
 .text_registration {
-}
-.text_registration p {
   height: 57px;
+  padding-top: 29px;
   font-size: 18px;
   line-height: 30px;
   color: #f0d8d9;
@@ -35,4 +33,5 @@
   word-spacing: -0.01em;
   letter-spacing: -0.01em;
   text-align: justify;
+  overflow: hidden;
 }
