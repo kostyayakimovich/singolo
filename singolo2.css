@@ -14,9 +14,6 @@
   padding: 69px 0 10px 0;
 }
 .header_portfolio {
-  padding-bottom: 29px;
-}
-.header_portfolio h2 {
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
@@ -26,7 +23,8 @@
   letter-spacing: -0.006em;
 }
 
-.text_portfolio p {
+.text_portfolio {
+  padding-top: 29px;
   height: 39px;
   font-size: 18px;
   line-height: 30px;
@@ -37,11 +35,10 @@
   letter-spacing: -0.01em;
   overflow: hidden;
 }
-.buttons_portfolio {
+
+.navigation_portfolio {
   width: 288px;
   margin-bottom: 9px;
-}
-.navigation_portfolio {
   display: flex;
   justify-content: space-between;
 }
@@ -85,19 +82,17 @@
   color: #dedede;
   border: 1px solid #c5c5c5;
 }
-images_portfolio {
-  margin: auto;
-  width: 940px;
-}
-.layout-4-column {
+.images_portfolio {
   width: 940px;
   height: 601px;
+  margin: 0 40px 0;
+}
+.layout-4-column {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
   overflow: hidden;
-  margin: 0 40px 0;
 }
 .img_portfolio {
   width: 220px;
@@ -116,10 +111,9 @@ images_portfolio {
   width: 940px;
   height: 218px;
 }
+
 .header_about_us {
   padding-top: 68px;
-}
-.header_about_us h2 {
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
@@ -128,11 +122,10 @@ images_portfolio {
   text-align: left;
   letter-spacing: -0.006em;
 }
+
 .text_about_us {
   height: 57px;
   padding-top: 29px;
-}
-.text_about_us p {
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
@@ -178,13 +171,12 @@ images_portfolio {
   font-family: "LatoRegular";
   text-align: justify;
   overflow: hidden;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.005em;
   word-spacing: -0.02em;
 }
-.social_media {
-  margin-top: 22px;
-}
+
 .links_social_media {
+  margin-top: 22px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 4fr;
   justify-content: left;
