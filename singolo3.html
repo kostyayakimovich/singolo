@@ -30,12 +30,18 @@
               type="text"
               name="username"
               placeholder="Name (Required)"
+              required
+              pattern="[A-Za-z]{1,32}"
+              minlength="2"
+              maxlength="30"
             />
             <input
               class="input_form"
               type="email"
               name="useremail"
               placeholder="Email (Required)"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
             <input
               class="input_form"

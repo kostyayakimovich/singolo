@@ -65,6 +65,10 @@
 .input_form::placeholder {
   color: #f48c8f;
 }
+.input_form:active,
+:focus {
+  outline: 2px solid #72201b;
+}
 .textarea {
   height: 195px;
   padding-top: 7px;
