@@ -15,7 +15,6 @@
     <section class="registration">
       <article class="top_registration">
         <h2 class="header_registration">Get a Quote</h2>
-
         <p class="text_registration">
           Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
           Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
@@ -23,25 +22,37 @@
           tortor mauris condimentum nibh.
         </p>
       </article>
-      <article class="form_info">
+      <article class="form_info ">
         <div class="form_registration">
-          <form action="#" method="get">
-            <input type="text" name="username" placeholder="Name (Required)" />
+          <form class="form" action="#" method="get">
             <input
+              class="input_form"
+              type="text"
+              name="username"
+              placeholder="Name (Required)"
+            />
+            <input
+              class="input_form"
               type="email"
               name="useremail"
               placeholder="Email (Required)"
             />
-            <input type="text" name="subject" placeholder="Subject" />
+            <input
+              class="input_form"
+              type="text"
+              name="subject"
+              placeholder="Subject"
+            />
             <textarea
+              class="input_form textarea"
               name="message"
               cols="10"
-              rows="10"
+              rows="30"
               placeholder="Describe your project in detail..."
             >
 Describe your project in detail...</textarea
             >
-            <input type="submit" value="Submit" />
+            <button class="input_form submit" type="submit">Submit</button>
           </form>
         </div>
         <div class="contact_info">
@@ -53,13 +64,24 @@ Describe your project in detail...</textarea
             consequat felis.
           </p>
 
-          <span class="contact-info_address">Elm St. 14/05 Lost City</span>
-          <a class="contact-info_phone" href="tel:+035283318635"
-            >03528 331 86 35</a
-          >
-          <a class="contact-info_email" href="mailto:info@singolo.com"
-            >info@singolo.com</a
-          >
+          <div class="contact_info_address  ">
+            <img
+              class="img_location"
+              src="./assets/img_contact_info/location.png"
+              alt="location"
+            />
+            <p class="address_text">Elm St. 14/05 Lost City</p>
+          </div>
+          <div class="contact_info_phone ">
+            <img src="./assets/img_contact_info/phone.png" alt="phone" />
+            <a class="phone_link" href="tel:+035283318635">03528 331 86 35</a>
+          </div>
+          <div class="contact_info_email ">
+            <img src="./assets/img_contact_info/mail.png" alt="mail" />
+            <a class="email_link" href="mailto:info@singolo.com"
+              >info@singolo.com</a
+            >
+          </div>
         </div>
       </article>
     </section>

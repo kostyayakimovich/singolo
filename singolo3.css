@@ -35,3 +35,115 @@
   text-align: justify;
   overflow: hidden;
 }
+.form_info {
+  padding-top: 45px;
+  width: 940px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
+  grid-gap: 13.5px;
+}
+.input_form {
+  width: 605px;
+  height: 38px;
+  border: 0;
+  padding-left: 14px;
+  border-radius: 5px;
+  background-color: #d6564f;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f48c8f;
+  font-family: "LatoRegular";
+  text-align: left;
+  letter-spacing: 0.01em;
+}
+.input_form::placeholder {
+  color: #f48c8f;
+}
+.textarea {
+  height: 195px;
+  padding-top: 7px;
+  outline: none;
+  -moz-appearance: none;
+  resize: none;
+  overflow: auto;
+  word-spacing: -0.025em;
+  letter-spacing: 0;
+}
+.submit {
+  width: 90px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 18px;
+  line-height: 18px;
+  font-family: "Lato";
+  font-weight: 900;
+  word-spacing: 0.1em;
+}
+.submit:hover {
+  background-color: #72201b;
+}
+.contact_info {
+  margin-left: 20px;
+}
+.contact_info_header {
+  font-size: 18px;
+  line-height: 18px;
+  color: #f0d8d9;
+  font-family: "Lato";
+  font-weight: 900;
+  text-align: left;
+}
+.contact_info_text {
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "LatoRegular";
+  letter-spacing: -0.02em;
+  word-spacing: -0.01em;
+  text-align: justify;
+}
+.contact_info_address {
+  padding: 21px 0 0 4px;
+}
+.address_text {
+  display: inline-block;
+}
+.address_text {
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "LatoRegular";
+  text-align: left;
+  letter-spacing: -0.01em;
+}
+.contact_info_phone {
+  padding-left: 1px;
+}
+.phone_link {
+  padding-left: 8px;
+  font-size: 12px;
+  line-height: 21px;
+  color: #f0d8d9;
+  font-family: "LatoRegular";
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: -0.02em;
+}
+
+.email_link {
+  padding-left: 7px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #f0d8d9;
+  font-family: "LatoRegular";
+  text-decoration: none;
+  cursor: pointer;
+}
