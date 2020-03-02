@@ -56,17 +56,25 @@
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
+  -ms-color: #f48c8f;
   font-family: "LatoRegular";
   text-align: left;
   letter-spacing: 0.01em;
 }
-.input_form::placeholder {
+.input::placeholder {
   color: #f48c8f;
 }
-.input_form:active,
-:focus {
+.input_form:-ms-input-placeholder {
+  color: #f48c8f;
+}
+.input_form:-moz-input-placeholder {
+  color: #f48c8f;
+}
+
+.input_form :focus {
   outline: 2px solid #72201b;
 }
+
 .textarea {
   height: 195px;
   padding-top: 7px;
