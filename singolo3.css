@@ -56,18 +56,17 @@
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
-  -ms-color: #f48c8f;
   font-family: "LatoRegular";
   text-align: left;
   letter-spacing: 0.01em;
 }
-.input::placeholder {
+.input_form::placeholder {
   color: #f48c8f;
 }
-.input_form:-ms-input-placeholder {
+.input_form:-ms-placeholder {
   color: #f48c8f;
 }
-.input_form:-moz-input-placeholder {
+.input_form:-moz-placeholder {
   color: #f48c8f;
 }
 
