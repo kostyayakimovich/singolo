@@ -63,6 +63,7 @@
 .input_form::placeholder {
   color: #f48c8f;
 }
+
 .input_form::-ms-placeholder {
   color: #f48c8f;
 }
