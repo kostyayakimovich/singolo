@@ -186,7 +186,7 @@
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 900;
   text-align: left;
   letter-spacing: -0.006em;
@@ -198,7 +198,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
-  font-family: "LatoLight";
+  font-family: "LatoLight", Verdana, serif;
   text-align: left;
   word-spacing: -0.01em;
   letter-spacing: -0.01em;
@@ -219,7 +219,7 @@
   border-radius: 5px;
   font-size: 12px;
   line-height: 21px;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", Verdana, serif;
   text-align: center;
 }
 
@@ -286,7 +286,7 @@
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 900;
   text-align: left;
   letter-spacing: -0.006em;
@@ -298,7 +298,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #767e9e;
-  font-family: "LatoLight";
+  font-family: "LatoLight", Verdana, serif;
   text-align: justify;
   letter-spacing: -0.01em;
   word-spacing: -0.01em;
@@ -318,7 +318,7 @@
   font-size: 18px;
   line-height: 18px;
   color: #666d89;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 900;
   text-align: left;
   letter-spacing: -0.01em;
@@ -333,7 +333,7 @@
   font-size: 12px;
   line-height: 21px;
   color: #767e9e;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", Verdana, serif;
   text-align: justify;
   overflow: hidden;
   letter-spacing: -0.005em;
@@ -367,7 +367,7 @@
   font-size: 30px;
   line-height: 18px;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 900;
   text-align: left;
   letter-spacing: -0.006em;
@@ -378,7 +378,7 @@
   font-size: 18px;
   line-height: 30px;
   color: #f0d8d9;
-  font-family: "LatoLight";
+  font-family: "LatoLight", Verdana, serif;
   word-spacing: -0.01em;
   letter-spacing: -0.01em;
   text-align: justify;
@@ -406,7 +406,7 @@
   font-size: 12px;
   line-height: 22px;
   color: #f48c8f;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", Verdana, serif;
   text-align: left;
   letter-spacing: 0.01em;
 }
@@ -444,7 +444,7 @@
   text-align: left;
   font-size: 18px;
   line-height: 18px;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 900;
   word-spacing: 0.1em;
 }
@@ -458,7 +458,7 @@
   font-size: 18px;
   line-height: 18px;
   color: #f0d8d9;
-  font-family: "Lato";
+  font-family: "Lato", Verdana, serif;
   font-weight: 900;
   text-align: left;
 }
@@ -467,7 +467,7 @@
   font-size: 12px;
   line-height: 21px;
   color: #f0d8d9;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", Verdana, serif;
   letter-spacing: -0.02em;
   word-spacing: -0.01em;
   text-align: justify;
@@ -483,7 +483,7 @@
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", Verdana, serif;
   text-align: left;
   letter-spacing: -0.01em;
 }
@@ -495,7 +495,7 @@
   font-size: 12px;
   line-height: 21px;
   color: #f0d8d9;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", Verdana, serif;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
@@ -506,7 +506,7 @@
   font-size: 12px;
   line-height: 22px;
   color: #f0d8d9;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", Verdana, serif;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
@@ -531,9 +531,9 @@
   padding-left: 1px;
   font-size: 12px;
   line-height: 22px;
-  font-family: "LatoRegular";
+  font-family: "LatoRegular", Verdana, serif;
   color: #666d89;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.02em;
 }
 .footer_links_social_media {
   padding-top: 4px;
