@@ -179,75 +179,16 @@
           lacinia odio sem nec elit
         </p>
 
-        <ul class="navigation_portfolio">
-          <li type="checked" class="all">All</li>
-          <li class="web_design">Web Design</li>
-          <li class="graphic_design">Graphic Design</li>
-          <li class="artwork">Artwork</li>
+        <ul class="navigation_portfolio" id="menuPortfolio">
+          <li  class="all active" id="allPortfolio">All</li>
+          <li class="web_design random">Web Design</li>
+          <li class="graphic_design random">Graphic Design</li>
+          <li class="artwork random">Artwork</li>
         </ul>
       </article>
       <article class="images_portfolio">
-        <div class="layout-4-column">
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/ship.jpg"
-            alt="design1"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/princess.jpg"
-            alt="design2"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/city.jpg"
-            alt="desig3n"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/robotlove.jpg"
-            alt="design4"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/monster_group.jpg"
-            alt="design5"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/ide.jpg"
-            alt="design6"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/monster_plus.jpg"
-            alt="design7"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/birds.jpg"
-            alt="design8"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/green_monster.jpg"
-            alt="design9"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/video_recorder.jpg"
-            alt="design10"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/white_monster.jpg"
-            alt="design11"
-          />
-          <img
-            class="img_portfolio"
-            src="./assets/img_portfolio/degree.jpg"
-            alt="design12"
-          />
+        <div class="layout-4-column" id="portfolioContainer">
+          
         </div>
       </article>
     </section>
@@ -373,6 +314,7 @@
               class="input_form"
               type="text"
               name="username"
+             
               placeholder="Name (Required)"
               required
               pattern="[A-Za-z]{1,32}"
@@ -385,6 +327,7 @@
               type="email"
               name="useremail"
               placeholder="Email (Required)"
+              
               required
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
@@ -457,6 +400,6 @@ Describe your project in detail...</textarea
         </ul>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" ></script>
   </body>
 </html>

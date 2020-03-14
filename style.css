@@ -273,8 +273,8 @@
 .all {
   width: 27px;
   height: 20px;
-  color: #dedede;
-  border: 1px solid #c5c5c5;
+  color: #767e9e;
+  border: 1px solid #767e9e;
 }
 .web_design {
   width: 76px;
@@ -294,6 +294,10 @@
   color: #767e9e;
   border: 1px solid #767e9e;
 }
+.navigation_portfolio li.active {
+  border: 1px solid #c5c5c5;
+}
+
 .navigation_portfolio li:hover {
   color: #dedede;
   border: 1px solid #c5c5c5;
@@ -311,9 +315,17 @@
   overflow: hidden;
 }
 .img_portfolio {
+  cursor: pointer;
   width: 220px;
   height: 187px;
   margin-bottom: 20px;
+  box-sizing: border-box;
+}
+.img_portfolio:active {
+  border: 5px solid #f06c64;
+}
+img.active_portfolio_img {
+  border: 5px solid #f06c64;
 }
 .about_us {
   width: 1020px;
@@ -497,6 +509,23 @@
 }
 .submit:hover {
   background-color: #72201b;
+}
+.message-block {
+  width: 100vh;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #0008;
+}
+.message-block.hidden {
+  display: none;
+}
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #000;
+  text-align: center;
 }
 .contact_info {
   margin-left: 20px;
