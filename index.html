@@ -297,7 +297,7 @@
         </div>
       </article>
     </section>
-    <section class="registration">
+    <section class="registration" id="registrationBlock">
       <article class="top_registration">
         <h2 class="header_registration">Get a Quote</h2>
         <p class="text_registration">
@@ -309,12 +309,12 @@
       </article>
       <article class="form_info ">
         <div class="form_registration">
-          <form class="form" action="./singolo3.html" method="POST">
+          <form class="form" action="#" method="POST" onsubmit="return checkForm()" id="form" >
             <input
               class="input_form"
               type="text"
               name="username"
-             
+             id="inputUsername"
               placeholder="Name (Required)"
               required
               pattern="[A-Za-z]{1,32}"
@@ -327,7 +327,7 @@
               type="email"
               name="useremail"
               placeholder="Email (Required)"
-              
+              id="inputEmail"
               required
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
@@ -335,19 +335,23 @@
               class="input_form"
               type="text"
               name="subject"
+              id="inputSubject"
               placeholder="Subject"
             />
             <textarea
               class="input_form textarea"
               name="message"
+              id="inputTextarea"
               cols="10"
               rows="30"
               placeholder="Describe your project in detail..."
             >
-Describe your project in detail...</textarea
+</textarea
             >
-            <button class="input_form submit" type="submit">Submit</button>
-          </form>
+            <button class="input_form submit" id="btnSubmit" type="submit" >Submit</button>
+            
+            
+          </form> 
         </div>
         <div class="contact_info" id="contact">
           <h3 class="contact_info_header">Contact Information</h3>

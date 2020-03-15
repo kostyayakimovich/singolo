@@ -119,16 +119,12 @@ function addImgRandom() {
     paintImg(boxRandom12[i]);
   }
 }
-function clearImg() {
-  imgPortfolio.remove();
-}
 
 //navigation portfolio
 
 MENUportolio.addEventListener("click", event => {
   MENUportolio.querySelectorAll("li").forEach(el => {
     el.classList.remove("active");
-    //clearImg();
   });
   event.target.classList.add("active");
 
@@ -140,7 +136,72 @@ MENUportolio.addEventListener("click", event => {
 portfolioContainer.addEventListener("click", event => {
   portfolioContainer.querySelectorAll("img").forEach(el => {
     el.classList.remove("active_portfolio_img");
-    //clearImg();
   });
   event.target.classList.add("active_portfolio_img");
+});
+// form
+const btnSubmit = document.getElementById("btnSubmit");
+
+const messageBlock = document.createElement("div");
+messageBlock.className = "message_block hidden";
+messageBlock.setAttribute("id", "messageBlock");
+const registration = document.getElementById("registrationBlock");
+registration.append(messageBlock);
+const message = document.createElement("div");
+message.setAttribute("id", "message");
+message.className = "message";
+messageBlock.append(message);
+//header
+const messageHeader = document.createElement("p");
+messageHeader.innerText = "Письмо отправлено";
+message.append(messageHeader);
+//topic(subject)
+const messageTopic = document.createElement("p");
+messageTopic.innerText = "Без темы";
+const resultSubject = document.createElement("span");
+messageTopic.append(resultSubject);
+message.append(messageTopic);
+
+//textarea description
+const messageDescription = document.createElement("p");
+messageDescription.innerText = "Без описания";
+const resultDescription = document.createElement("span");
+messageDescription.append(resultDescription);
+message.append(messageDescription);
+//buttonOK
+const closeBtn = document.createElement("button");
+closeBtn.className = "closeBtn";
+closeBtn.innerText = "OK";
+message.append(closeBtn);
+const inputSubject = document.getElementById("inputSubject").value;
+const inputTextarea = document.getElementById("inputTextarea").value;
+
+btnSubmit.onclick = function checkForm() {
+  const input = document.getElementById("inputUsername").value;
+  const email = document.getElementById("inputEmail").value;
+  const inputSubject = document.getElementById("inputSubject").value;
+  const inputTextarea = document.getElementById("inputTextarea").value;
+
+  if (input && email) {
+    console.log(inputSubject);
+    messageTopic.innerText = inputSubject
+      ? `Тема: ${inputSubject}`
+      : "Без темы";
+    messageDescription.innerText = inputTextarea
+      ? `Тема: ${inputTextarea}`
+      : "Без описания";
+  }
+  document.getElementById("messageBlock").classList.remove("hidden");
+
+  return false;
+};
+
+closeBtn.addEventListener("click", () => {
+  messageTopic.innerText = "";
+  messageDescription.innerText = "";
+  document.getElementById("messageBlock").classList.add("hidden");
+  document.getElementById("inputUsername").value = "";
+  document.getElementById("inputEmail").value = "";
+  document.getElementById("inputSubject").value = "";
+  document.getElementById("inputTextarea").value = "";
 });

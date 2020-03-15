@@ -412,6 +412,7 @@ img.active_portfolio_img {
   filter: invert(1);
 }
 .registration {
+  position: relative;
   width: 1020px;
   height: 648px;
   background-color: #f06c64;
@@ -510,14 +511,15 @@ img.active_portfolio_img {
 .submit:hover {
   background-color: #72201b;
 }
-.message-block {
-  width: 100vh;
-  height: 100vh;
+.message_block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
   background: #0008;
 }
-.message-block.hidden {
+.hidden {
   display: none;
 }
 .message {
