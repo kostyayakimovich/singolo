@@ -1,6 +1,8 @@
 const MENU = document.getElementById("menu");
-const sliderLeft = document.getElementById("sliderLeft");
-const sliderRight = document.getElementById("sliderRight");
+const sliderLeft1 = document.getElementById("sliderLeft1");
+const sliderRight1 = document.getElementById("sliderRight1");
+const sliderLeft2 = document.getElementById("sliderLeft2");
+const sliderRight2 = document.getElementById("sliderRight2");
 const SLIDER = document.getElementById("slider");
 const slide1 = document.getElementById("slide1");
 const img = document.createElement("img");
@@ -25,33 +27,110 @@ const imgPortfolioBox = [
   { name: "design11", src: "./assets/img_portfolio/white_monster.jpg" },
   { name: "design11", src: "./assets/img_portfolio/degree.jpg" }
 ];
-let countClickArrow = 1;
+let countClickArrow = 0;
+let countClickArrow2 = 0;
 let countVerticalPhone = 1;
 let countHorizontalPhone = 1;
 //const clickLeftArrow;
 //const clickRightArrow;
 img.setAttribute("src", "./assets/img_singolo1/Slider.png");
+img.className = "slide2";
 
+//SLIDER.append(img);
 //header navigation
 MENU.addEventListener("click", event => {
   MENU.querySelectorAll("li>a").forEach(el => el.classList.remove("active"));
   event.target.classList.add("active");
 });
 //slider
-sliderLeft.addEventListener("click", event => {
-  countClickArrow++;
-  countClickArrow % 2 !== 0 ? img.replaceWith(slide1) : slide1.replaceWith(img);
-  //clickLeftArrow = true;
-  // clickLeftArrow ? slide1.replaceWith(img) : img.replaceWith(slide1);
-  // clickLeftArrow = !clickLeftArrow;
+
+const containerSlide2 = document.getElementById("containerSlide2");
+const containerSlide1 = document.getElementById("containerSlide1");
+sliderLeft1.addEventListener("click", event => {
+  let interval = setInterval(function() {
+    if (containerSlide1.style.left === "-1020px") {
+      clearInterval(interval);
+
+      return;
+    } else {
+      countClickArrow--;
+      containerSlide1.style.left = `${countClickArrow}px`;
+    }
+  }, 1);
 });
-sliderRight.addEventListener("click", event => {
-  countClickArrow++;
-  countClickArrow % 2 !== 0 ? img.replaceWith(slide1) : slide1.replaceWith(img);
-  // clickRightArrow = true;
-  // clickRightArrow ? img.replaceWith(slide1) : slide1.replaceWith(img);
-  //  clickRightArrow = !clickRightArrow;
+sliderRight1.addEventListener("click", event => {
+  let interval = setInterval(function() {
+    if (containerSlide1.style.left === "1020px") {
+      clearInterval(interval);
+
+      return;
+    } else {
+      countClickArrow++;
+      containerSlide1.style.left = `${countClickArrow}px`;
+    }
+  }, 1);
 });
+sliderLeft2.addEventListener("click", event => {
+  containerSlide1.style.left = "1020px";
+
+  countClickArrow = 1020;
+  let interval = setInterval(function() {
+    if (containerSlide1.style.left === "0px") {
+      clearInterval(interval);
+
+      return;
+    } else {
+      countClickArrow--;
+      containerSlide1.style.left = `${countClickArrow}px`;
+    }
+  }, 1);
+});
+sliderLeft2.addEventListener("click", event => {
+  containerSlide1.style.left = "1020px";
+
+  countClickArrow = 1020;
+  let interval = setInterval(function() {
+    if (containerSlide1.style.left === "0px") {
+      clearInterval(interval);
+
+      return;
+    } else {
+      countClickArrow--;
+      containerSlide1.style.left = `${countClickArrow}px`;
+    }
+  }, 1);
+});
+sliderLeft2.addEventListener("click", event => {
+  containerSlide1.style.left = "1020px";
+
+  countClickArrow = 1020;
+  let interval = setInterval(function() {
+    if (containerSlide1.style.left === "0px") {
+      clearInterval(interval);
+
+      return;
+    } else {
+      countClickArrow--;
+      containerSlide1.style.left = `${countClickArrow}px`;
+    }
+  }, 1);
+});
+sliderRight2.addEventListener("click", event => {
+  containerSlide1.style.left = "-1020px";
+
+  countClickArrow = -1020;
+  let interval = setInterval(function() {
+    if (containerSlide1.style.left === "0px") {
+      clearInterval(interval);
+
+      return;
+    } else {
+      countClickArrow++;
+      containerSlide1.style.left = `${countClickArrow}px`;
+    }
+  }, 1);
+});
+
 //black screen
 imgVertical.addEventListener("click", event => {
   countVerticalPhone++;

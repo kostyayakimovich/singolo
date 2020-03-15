@@ -68,11 +68,25 @@
 }
 
 .slider {
+  overflow: hidden;
   position: relative;
   height: 600px;
   width: 1020px;
 }
+.container_slide1 {
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
+.container_slide2 {
+  width: 100%;
+  left: 0;
+  position: absolute;
+}
 
+.slide2 {
+  width: 100%;
+}
 .slider_control_left {
   position: absolute;
   cursor: pointer;
@@ -86,8 +100,12 @@
   top: 281px;
   right: 40px;
 }
-
+.slide2 {
+  position: relative;
+}
 .slide1 {
+  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;

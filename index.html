@@ -32,34 +32,62 @@
         </nav>
       </section>
     </header>
-    <section class="slider" id="slider"> 
-            <img
-              src="./assets/img_singolo1/arrow_left.png"
-              alt="switch control left"id="sliderLeft" class="slider_control_left"
-          /> 
-            <img
-              src="./assets/img_singolo1/arrow_right.png"
-              alt="switch control right" id="sliderRight"class="slider_control_right"
+    <section class="slider" id="slider">
+      <div class="container_slide2" id="containerSlide2">
+        <div class="slide2">
+          <img
+            src="./assets/img_singolo1/Slider.png"
+            alt="slide2"
+            id="slide2"
+            class="slide2"
           />
-      <div class="slide1" id="slide1">
-        
-          
+          <img
+            src="./assets/img_singolo1/arrow_left.png"
+            alt="switch control left"
+            id="sliderLeft2"
+            class="slider_control_left"
+          />
+          <img
+            src="./assets/img_singolo1/arrow_right.png"
+            alt="switch control right"
+            id="sliderRight2"
+            class="slider_control_right"
+          />
+        </div>
+      </div>
+      <div class="container_slide1" id="containerSlide1">
+        <div class="slide1" id="slide1">
+          <img
+            src="./assets/img_singolo1/arrow_left.png"
+            alt="switch control left"
+            id="sliderLeft1"
+            class="slider_control_left"
+          />
+          <img
+            src="./assets/img_singolo1/arrow_right.png"
+            alt="switch control right"
+            id="sliderRight1"
+            class="slider_control_right"
+          />
           <div class="slider_images">
             <img
               src="./assets/img_singolo1/iPhone Vertical.png"
               class="vertical_phone"
-              alt="vertical phone" id="imgVertical"
+              alt="vertical phone"
+              id="imgVertical"
             />
             <img
               src="./assets/img_singolo1/iPhone Horizontal.png"
               class="horisontal_phone"
-              alt="horisontal phone" id="imgHorizontal"
+              alt="horisontal phone"
+              id="imgHorizontal"
             />
           </div>
-          
-      <div class="black_screen_horizont" id="blackHorisont"></div>
-      <div class="black_screen_vertical" id="blackVertical"></div>
-      
+
+          <div class="black_screen_horizont" id="blackHorisont"></div>
+          <div class="black_screen_vertical" id="blackVertical"></div>
+        </div>
+      </div>
     </section>
     <section class="servis_content" id="services">
       <article class="servis_content_description">
@@ -180,16 +208,14 @@
         </p>
 
         <ul class="navigation_portfolio" id="menuPortfolio">
-          <li  class="all active" id="allPortfolio">All</li>
+          <li class="all active" id="allPortfolio">All</li>
           <li class="web_design random">Web Design</li>
           <li class="graphic_design random">Graphic Design</li>
           <li class="artwork random">Artwork</li>
         </ul>
       </article>
       <article class="images_portfolio">
-        <div class="layout-4-column" id="portfolioContainer">
-          
-        </div>
+        <div class="layout-4-column" id="portfolioContainer"></div>
       </article>
     </section>
     <section class="about_us" id="about">
@@ -309,12 +335,18 @@
       </article>
       <article class="form_info ">
         <div class="form_registration">
-          <form class="form" action="#" method="POST" onsubmit="return checkForm()" id="form" >
+          <form
+            class="form"
+            action="#"
+            method="POST"
+            onsubmit="return checkForm()"
+            id="form"
+          >
             <input
               class="input_form"
               type="text"
               name="username"
-             id="inputUsername"
+              id="inputUsername"
               placeholder="Name (Required)"
               required
               pattern="[A-Za-z]{1,32}"
@@ -345,13 +377,11 @@
               cols="10"
               rows="30"
               placeholder="Describe your project in detail..."
-            >
-</textarea
-            >
-            <button class="input_form submit" id="btnSubmit" type="submit" >Submit</button>
-            
-            
-          </form> 
+            ></textarea>
+            <button class="input_form submit" id="btnSubmit" type="submit">
+              Submit
+            </button>
+          </form>
         </div>
         <div class="contact_info" id="contact">
           <h3 class="contact_info_header">Contact Information</h3>
@@ -404,6 +434,6 @@
         </ul>
       </div>
     </footer>
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
   </body>
 </html>
