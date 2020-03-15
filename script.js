@@ -28,6 +28,8 @@ const imgPortfolioBox = [
 let countClickArrow = 1;
 let countVerticalPhone = 1;
 let countHorizontalPhone = 1;
+//const clickLeftArrow;
+//const clickRightArrow;
 img.setAttribute("src", "./assets/img_singolo1/Slider.png");
 
 //header navigation
@@ -39,10 +41,16 @@ MENU.addEventListener("click", event => {
 sliderLeft.addEventListener("click", event => {
   countClickArrow++;
   countClickArrow % 2 !== 0 ? img.replaceWith(slide1) : slide1.replaceWith(img);
+  //clickLeftArrow = true;
+  // clickLeftArrow ? slide1.replaceWith(img) : img.replaceWith(slide1);
+  // clickLeftArrow = !clickLeftArrow;
 });
 sliderRight.addEventListener("click", event => {
   countClickArrow++;
   countClickArrow % 2 !== 0 ? img.replaceWith(slide1) : slide1.replaceWith(img);
+  // clickRightArrow = true;
+  // clickRightArrow ? img.replaceWith(slide1) : slide1.replaceWith(img);
+  //  clickRightArrow = !clickRightArrow;
 });
 //black screen
 imgVertical.addEventListener("click", event => {
@@ -170,7 +178,7 @@ messageDescription.append(resultDescription);
 message.append(messageDescription);
 //buttonOK
 const closeBtn = document.createElement("button");
-closeBtn.className = "closeBtn";
+closeBtn.className = "closeBtn input_form";
 closeBtn.innerText = "OK";
 message.append(closeBtn);
 const inputSubject = document.getElementById("inputSubject").value;
@@ -183,13 +191,14 @@ btnSubmit.onclick = function checkForm() {
   const inputTextarea = document.getElementById("inputTextarea").value;
 
   if (input && email) {
-    console.log(inputSubject);
     messageTopic.innerText = inputSubject
       ? `Тема: ${inputSubject}`
       : "Без темы";
     messageDescription.innerText = inputTextarea
-      ? `Тема: ${inputTextarea}`
+      ? `Описание: ${inputTextarea}`
       : "Без описания";
+  } else {
+    return true;
   }
   document.getElementById("messageBlock").classList.remove("hidden");
 
