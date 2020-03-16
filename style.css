@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 .header {
   height: 89px;
@@ -134,22 +135,28 @@
   justify-content: space-around;
 }
 .vertical_phone {
-  position: relative;
-  cursor: pointer;
   padding: 38px 35px;
   margin-bottom: 5px;
 }
 .horisontal_phone {
-  position: relative;
-  cursor: pointer;
   padding: 38px;
   margin-bottom: 6px;
 }
-
+.square_phone1 {
+  position: absolute;
+  cursor: pointer;
+  top: 460px;
+  left: 198px;
+}
+.square_phone2 {
+  position: absolute;
+  cursor: pointer;
+  top: 260px;
+  left: 433px;
+}
 .black_screen_vertical {
   display: none;
   position: absolute;
-  cursor: pointer;
   width: 188px;
   height: 333px;
   background-color: rgb(12, 12, 12);
@@ -159,7 +166,6 @@
 .black_screen_horizont {
   display: none;
   position: absolute;
-  cursor: pointer;
   width: 333px;
   height: 188px;
   background-color: rgb(12, 12, 12);
@@ -542,18 +548,24 @@ img.active_portfolio_img {
 }
 .message {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  border: 5px solid #f48c8f;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  top: 48%;
+  left: 40%;
+  padding: 10px;
+  border: 6px solid #c5c5c5;
+  background-color: #dedede;
   font-size: 18px;
   line-height: 18px;
   font-family: "Lato", Verdana, serif;
   font-weight: 900;
-  color: #dedede;
-  text-align: center;
+  color: #f06c64;
+  text-align: left;
 }
 .closeBtn {
   width: 55px;
+  margin-top: 10px;
   cursor: pointer;
   text-align: left;
   font-size: 18px;
@@ -563,7 +575,7 @@ img.active_portfolio_img {
   word-spacing: 0.1em;
 }
 .closeBtn:hover {
-  background-color: #dedede;
+  background-color: #72201b;
 }
 .contact_info {
   margin-left: 20px;
