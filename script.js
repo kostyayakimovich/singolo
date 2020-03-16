@@ -147,7 +147,7 @@ function getRandom(max) {
   };
 }
 
-function buildCard(value) {
+function buildImg(value) {
   let getRandomNumber = getRandom(12);
 
   for (let i = 0; i < value; i++) {
@@ -159,7 +159,7 @@ function buildCard(value) {
 }
 
 function addImgRandom() {
-  buildCard(12);
+  buildImg(12);
   for (let i = 0; i < boxRandom12.length; i++) {
     paintImg(boxRandom12[i]);
   }
