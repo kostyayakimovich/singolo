@@ -3,6 +3,14 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+.wrap {
+  position: relative;
+  margin: auto;
+  width: 1020px;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: "LatoRegular", Verdana, serif;
+}
 .header {
   height: 89px;
   width: 1020px;
@@ -238,8 +246,8 @@
   height: 128px;
   font-size: 12px;
   line-height: 22px;
-  color: #767e9e;
   font-family: "LatoRegular", Verdana, serif;
+  color: #767e9e;
   text-align: justify;
 }
 .portfolio {
@@ -436,7 +444,6 @@ img.active_portfolio_img {
   filter: invert(1);
 }
 .registration {
-  position: relative;
   width: 1020px;
   height: 648px;
   background-color: #f06c64;
@@ -547,11 +554,11 @@ img.active_portfolio_img {
   display: none;
 }
 .message {
-  position: absolute;
+  position: fixed;
   max-width: 250px;
   overflow: hidden;
   white-space: nowrap;
-  top: 48%;
+  top: 50%;
   left: 40%;
   padding: 10px;
   border: 6px solid #c5c5c5;

@@ -12,440 +12,460 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <section class="header_content">
-        <div class="logo">
-          <h1>singolo<span>*</span></h1>
+    <div class="wrap">
+      <header class="header">
+        <section class="header_content">
+          <div class="logo">
+            <h1>singolo<span>*</span></h1>
+          </div>
+          <nav class="header_navigation">
+            <ul class="navigation" id="menu">
+              <li class="item_menu"><a href="#">home</a></li>
+              <span class="dot">.</span>
+              <li class="item_menu"><a href="#services">services</a></li>
+              <span class="dot">.</span>
+              <li class="item_menu"><a href="#portfolio">portfolio</a></li>
+              <span class="dot">.</span>
+              <li class="item_menu"><a href="#about">about</a></li>
+              <span class="dot">.</span>
+              <li class="item_menu"><a href="#contact">contact</a></li>
+            </ul>
+          </nav>
+        </section>
+      </header>
+      <section class="slider" id="slider">
+        <div class="container_slide2" id="containerSlide2">
+          <div class="slide2">
+            <img
+              src="./assets/img_singolo1/Slider.png"
+              alt="slide2"
+              id="slide2"
+              class="slide2"
+            />
+            <img
+              src="./assets/img_singolo1/arrow_left.png"
+              alt="switch control left"
+              id="sliderLeft2"
+              class="slider_control_left"
+            />
+            <img
+              src="./assets/img_singolo1/arrow_right.png"
+              alt="switch control right"
+              id="sliderRight2"
+              class="slider_control_right"
+            />
+          </div>
         </div>
-        <nav class="header_navigation">
-          <ul class="navigation" id="menu">
-            <li class="item_menu"><a href="#">home</a></li>
-            <span class="dot">.</span>
-            <li class="item_menu"><a href="#services">services</a></li>
-            <span class="dot">.</span>
-            <li class="item_menu"><a href="#portfolio">portfolio</a></li>
-            <span class="dot">.</span>
-            <li class="item_menu"><a href="#about">about</a></li>
-            <span class="dot">.</span>
-            <li class="item_menu"><a href="#contact">contact</a></li>
-          </ul>
-        </nav>
+        <div class="container_slide1" id="containerSlide1">
+          <div class="slide1" id="slide1">
+            <img
+              src="./assets/img_singolo1/arrow_left.png"
+              alt="switch control left"
+              id="sliderLeft1"
+              class="slider_control_left"
+            />
+            <img
+              src="./assets/img_singolo1/arrow_right.png"
+              alt="switch control right"
+              id="sliderRight1"
+              class="slider_control_right"
+            />
+            <div class="slider_images">
+              <img
+                src="./assets/img_singolo1/Square.png"
+                class="square_phone1"
+                alt="vertical phone Square"
+                id="imgVerticalSquare"
+              />
+              <img
+                src="./assets/img_singolo1/Square.png"
+                class="square_phone2"
+                alt="horisontal phone Square"
+                id="imgHorisontalSquare"
+              />
+              <img
+                src="./assets/img_singolo1/iPhone Vertical.png"
+                class="vertical_phone"
+                alt="vertical phone"
+                id="imgVertical"
+              />
+              <img
+                src="./assets/img_singolo1/iPhone Horizontal.png"
+                class="horisontal_phone"
+                alt="horisontal phone"
+                id="imgHorizontal"
+              />
+            </div>
+
+            <div class="black_screen_horizont" id="blackHorisont"></div>
+            <div class="black_screen_vertical" id="blackVertical"></div>
+          </div>
+        </div>
       </section>
-    </header>
-    <section class="slider" id="slider">
-      <div class="container_slide2" id="containerSlide2">
-        <div class="slide2">
-          <img
-            src="./assets/img_singolo1/Slider.png"
-            alt="slide2"
-            id="slide2"
-            class="slide2"
-          />
-          <img
-            src="./assets/img_singolo1/arrow_left.png"
-            alt="switch control left"
-            id="sliderLeft2"
-            class="slider_control_left"
-          />
-          <img
-            src="./assets/img_singolo1/arrow_right.png"
-            alt="switch control right"
-            id="sliderRight2"
-            class="slider_control_right"
-          />
-        </div>
-      </div>
-      <div class="container_slide1" id="containerSlide1">
-        <div class="slide1" id="slide1">
-          <img
-            src="./assets/img_singolo1/arrow_left.png"
-            alt="switch control left"
-            id="sliderLeft1"
-            class="slider_control_left"
-          />
-          <img
-            src="./assets/img_singolo1/arrow_right.png"
-            alt="switch control right"
-            id="sliderRight1"
-            class="slider_control_right"
-          />
-          <div class="slider_images">
-            <img
-              src="./assets/img_singolo1/Square.png"
-              class="square_phone1"
-              alt="vertical phone Square"
-              id="imgVerticalSquare"
-            />
-            <img
-              src="./assets/img_singolo1/Square.png"
-              class="square_phone2"
-              alt="horisontal phone Square"
-              id="imgHorisontalSquare"
-            />
-            <img
-              src="./assets/img_singolo1/iPhone Vertical.png"
-              class="vertical_phone"
-              alt="vertical phone"
-              id="imgVertical"
-            />
-            <img
-              src="./assets/img_singolo1/iPhone Horizontal.png"
-              class="horisontal_phone"
-              alt="horisontal phone"
-              id="imgHorizontal"
-            />
-          </div>
-
-          <div class="black_screen_horizont" id="blackHorisont"></div>
-          <div class="black_screen_vertical" id="blackVertical"></div>
-        </div>
-      </div>
-    </section>
-    <section class="servis_content" id="services">
-      <article class="servis_content_description">
-        <h2>Our Services</h2>
-        <p>
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
-          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-          tortor mauris condimentum nibh.
-        </p>
-      </article>
-      <article class="servis_content_first_row">
-        <div class="layout-3-column">
-          <div class="content_item">
-            <img
-              src="./assets/img_singolo1/pen.png"
-              alt="switch control left"
-              height="59"
-              width="59"
-            />
-            <div class="content_item_text">
-              <h3>Custom Design</h3>
-              <p>
-                Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-                laoreet, viverra lacus ut, ultrices velit.
-              </p>
+      <section class="servis_content" id="services">
+        <article class="servis_content_description">
+          <h2>Our Services</h2>
+          <p>
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+            Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+            lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+            tortor mauris condimentum nibh.
+          </p>
+        </article>
+        <article class="servis_content_first_row">
+          <div class="layout-3-column">
+            <div class="content_item">
+              <img
+                src="./assets/img_singolo1/pen.png"
+                alt="switch control left"
+                height="59"
+                width="59"
+              />
+              <div class="content_item_text">
+                <h3>Custom Design</h3>
+                <p>
+                  Curabitur vestibulum eget mauris quis laoreet. Phasellus in
+                  quam laoreet, viverra lacus ut, ultrices velit.
+                </p>
+              </div>
+            </div>
+            <div class="content_item">
+              <img
+                src="./assets/img_singolo1/bulb.png"
+                alt="switch control left"
+                height="59"
+                width="59"
+              />
+              <div class="content_item_text">
+                <h3>Inovative Ideas</h3>
+                <p>
+                  Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                  purus, nec rutrum tellus dolor id lorem.
+                </p>
+              </div>
+            </div>
+            <div class="content_item">
+              <img
+                src="./assets/img_singolo1/heart.png"
+                alt="switch control left"
+                height="59"
+                width="59"
+              />
+              <div class="content_item_text">
+                <h3>Love Is The Answer</h3>
+                <p>
+                  Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                  turpis, et consequat felis. Quisque condimentum.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="content_item">
-            <img
-              src="./assets/img_singolo1/bulb.png"
-              alt="switch control left"
-              height="59"
-              width="59"
-            />
-            <div class="content_item_text">
-              <h3>Inovative Ideas</h3>
-              <p>
-                Quisque luctus, quam eget molestie commodo, lacus purus cursus
-                purus, nec rutrum tellus dolor id lorem.
-              </p>
+        </article>
+        <article class="servis_content_second_row">
+          <div class="layout-3-column">
+            <div class="content_item">
+              <img
+                src="./assets/img_singolo1/small phone.png"
+                alt="switch control left"
+                height="59"
+                width="59"
+              />
+              <div class="content_item_text">
+                <h3>Responsive Layout</h3>
+                <p>
+                  Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
+                  blandit nunc ligula. Praesent elit leo.
+                </p>
+              </div>
+            </div>
+            <div class="content_item">
+              <img
+                src="./assets/img_singolo1/bubble.png"
+                alt="switch control left"
+                height="59"
+                width="59"
+              />
+              <div class="content_item_text">
+                <h3>24 / 7 Support</h3>
+                <p>
+                  Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
+                  Nulla a sem erat. Pellentesque egestas venenatis lorem .
+                </p>
+              </div>
+            </div>
+            <div class="content_item">
+              <img
+                src="./assets/img_singolo1/star.png"
+                alt="switch control left"
+                height="59"
+                width="59"
+              />
+              <div class="content_item_text">
+                <h3>Feel Like A Star</h3>
+                <p>
+                  Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
+                  nibh. Fusce vitae aliquam tellus.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="content_item">
-            <img
-              src="./assets/img_singolo1/heart.png"
-              alt="switch control left"
-              height="59"
-              width="59"
-            />
-            <div class="content_item_text">
-              <h3>Love Is The Answer</h3>
-              <p>
-                Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-                turpis, et consequat felis. Quisque condimentum.
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-      <article class="servis_content_second_row">
-        <div class="layout-3-column">
-          <div class="content_item">
-            <img
-              src="./assets/img_singolo1/small phone.png"
-              alt="switch control left"
-              height="59"
-              width="59"
-            />
-            <div class="content_item_text">
-              <h3>Responsive Layout</h3>
-              <p>
-                Sed porttitor placerat rhoncus. In at nunc tellus. Maecenas
-                blandit nunc ligula. Praesent elit leo.
-              </p>
-            </div>
-          </div>
-          <div class="content_item">
-            <img
-              src="./assets/img_singolo1/bubble.png"
-              alt="switch control left"
-              height="59"
-              width="59"
-            />
-            <div class="content_item_text">
-              <h3>24 / 7 Support</h3>
-              <p>
-                Vivamus vel quam lacinia, tincidunt dui non, vehicula nisi.
-                Nulla a sem erat. Pellentesque egestas venenatis lorem .
-              </p>
-            </div>
-          </div>
-          <div class="content_item">
-            <img
-              src="./assets/img_singolo1/star.png"
-              alt="switch control left"
-              height="59"
-              width="59"
-            />
-            <div class="content_item_text">
-              <h3>Feel Like A Star</h3>
-              <p>
-                Quisque hendrerit purus dapibus, ornare nibh vitae, viverra
-                nibh. Fusce vitae aliquam tellus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section class="portfolio" id="portfolio">
-      <article class="top_portfolio">
-        <h2 class="header_portfolio">Portfolio</h2>
+        </article>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <article class="top_portfolio">
+          <h2 class="header_portfolio">Portfolio</h2>
 
-        <p class="text_portfolio">
-          Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-          lacinia odio sem nec elit
-        </p>
-
-        <ul class="navigation_portfolio" id="menuPortfolio">
-          <li class="all active" id="allPortfolio">All</li>
-          <li class="web_design random">Web Design</li>
-          <li class="graphic_design random">Graphic Design</li>
-          <li class="artwork random">Artwork</li>
-        </ul>
-      </article>
-      <article class="images_portfolio">
-        <div class="layout-4-column" id="portfolioContainer"></div>
-      </article>
-    </section>
-    <section class="about_us" id="about">
-      <article class="top_about_us">
-        <h2 class="header_about_us">About Us</h2>
-
-        <p class="text_about_us">
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
-          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-          tortor mauris condimentum nibh.
-        </p>
-      </article>
-      <article class="cards_about_us">
-        <div class="layout-3-column">
-          <div class="card_designer">
-            <img
-              class="foto_card"
-              src="./assets/img_about_us/adam.png"
-              alt="adam jensen"
-              width="300"
-              height="300"
-            />
-            <h3 class="name_card">Adam Jensen</h3>
-            <a class="text_card"
-              >Quisque luctus, quam eget molestie commodo, lacus purus cursus
-              purus, nec rutrum tellus dolor id lorem.</a
-            >
-
-            <ul class="links_social_media">
-              <li>
-                <img src="./assets/img_about_us/facebook.png" alt="facebook" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/google.png" alt="google" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/twitter.png" alt="twitter" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/linkedin.png" alt="linkedin" />
-              </li>
-            </ul>
-          </div>
-          <div class="card_designer">
-            <img
-              class="foto_card"
-              src="./assets/img_about_us/desmond.png"
-              alt="adam jensen"
-              width="300"
-              height="300"
-            />
-            <h3 class="name_card">
-              Desmond Miles
-            </h3>
-            <a class="text_card"
-              >Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam
-              laoreet, viverra lacus ut, ultrices velit.</a
-            >
-
-            <ul class="links_social_media">
-              <li>
-                <img src="./assets/img_about_us/facebook.png" alt="facebook" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/google.png" alt="google" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/twitter.png" alt="twitter" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/linkedin.png" alt="linkedin" />
-              </li>
-            </ul>
-          </div>
-          <div class="card_designer">
-            <img
-              class="foto_card"
-              src="./assets/img_about_us/scolara.png"
-              alt="adam jensen"
-              width="300"
-              height="300"
-            />
-            <h3 class="name_card">Scolara Visari</h3>
-            <a class="text_card"
-              >Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
-              turpis, et consequat felis. Quisque condimentum.</a
-            >
-
-            <ul class="links_social_media">
-              <li>
-                <img src="./assets/img_about_us/facebook.png" alt="facebook" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/google.png" alt="google" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/twitter.png" alt="twitter" />
-              </li>
-              <li>
-                <img src="./assets/img_about_us/linkedin.png" alt="linkedin" />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </article>
-    </section>
-    <section class="registration" id="registrationBlock">
-      <article class="top_registration">
-        <h2 class="header_registration">Get a Quote</h2>
-        <p class="text_registration">
-          Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
-          Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
-          lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
-          tortor mauris condimentum nibh.
-        </p>
-      </article>
-      <article class="form_info ">
-        <div class="form_registration">
-          <form
-            class="form"
-            action="#"
-            method="POST"
-            onsubmit="return checkForm()"
-            id="form"
-          >
-            <input
-              class="input_form"
-              type="text"
-              name="username"
-              id="inputUsername"
-              placeholder="Name (Required)"
-              required
-              pattern="[A-Za-z]{1,32}"
-              minlength="2"
-              maxlength="30"
-              color="#f48c8f"
-            />
-            <input
-              class="input_form"
-              type="email"
-              name="useremail"
-              placeholder="Email (Required)"
-              id="inputEmail"
-              required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-            />
-            <input
-              class="input_form"
-              type="text"
-              name="subject"
-              id="inputSubject"
-              placeholder="Subject"
-            />
-            <textarea
-              class="input_form textarea"
-              name="message"
-              id="inputTextarea"
-              cols="10"
-              rows="30"
-              placeholder="Describe your project in detail..."
-            ></textarea>
-            <button class="input_form submit" id="btnSubmit" type="submit">
-              Submit
-            </button>
-          </form>
-        </div>
-        <div class="contact_info" id="contact">
-          <h3 class="contact_info_header">Contact Information</h3>
-          <p class="contact_info_text">
-            Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
-            Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla
-            sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
-            consequat felis.
+          <p class="text_portfolio">
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula,
+            eget lacinia odio sem nec elit
           </p>
 
-          <div class="contact_info_address  ">
-            <img
-              class="img_location"
-              src="./assets/img_contact_info/location.png"
-              alt="location"
-            />
-            <p class="address_text">Elm St. 14/05 Lost City</p>
+          <ul class="navigation_portfolio" id="menuPortfolio">
+            <li class="all active" id="allPortfolio">All</li>
+            <li class="web_design random">Web Design</li>
+            <li class="graphic_design random">Graphic Design</li>
+            <li class="artwork random">Artwork</li>
+          </ul>
+        </article>
+        <article class="images_portfolio">
+          <div class="layout-4-column" id="portfolioContainer"></div>
+        </article>
+      </section>
+      <section class="about_us" id="about">
+        <article class="top_about_us">
+          <h2 class="header_about_us">About Us</h2>
+
+          <p class="text_about_us">
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+            Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+            lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+            tortor mauris condimentum nibh.
+          </p>
+        </article>
+        <article class="cards_about_us">
+          <div class="layout-3-column">
+            <div class="card_designer">
+              <img
+                class="foto_card"
+                src="./assets/img_about_us/adam.png"
+                alt="adam jensen"
+                width="300"
+                height="300"
+              />
+              <h3 class="name_card">Adam Jensen</h3>
+              <a class="text_card"
+                >Quisque luctus, quam eget molestie commodo, lacus purus cursus
+                purus, nec rutrum tellus dolor id lorem.</a
+              >
+
+              <ul class="links_social_media">
+                <li>
+                  <img
+                    src="./assets/img_about_us/facebook.png"
+                    alt="facebook"
+                  />
+                </li>
+                <li>
+                  <img src="./assets/img_about_us/google.png" alt="google" />
+                </li>
+                <li>
+                  <img src="./assets/img_about_us/twitter.png" alt="twitter" />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img_about_us/linkedin.png"
+                    alt="linkedin"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="card_designer">
+              <img
+                class="foto_card"
+                src="./assets/img_about_us/desmond.png"
+                alt="adam jensen"
+                width="300"
+                height="300"
+              />
+              <h3 class="name_card">
+                Desmond Miles
+              </h3>
+              <a class="text_card"
+                >Curabitur vestibulum eget mauris quis laoreet. Phasellus in
+                quam laoreet, viverra lacus ut, ultrices velit.</a
+              >
+
+              <ul class="links_social_media">
+                <li>
+                  <img
+                    src="./assets/img_about_us/facebook.png"
+                    alt="facebook"
+                  />
+                </li>
+                <li>
+                  <img src="./assets/img_about_us/google.png" alt="google" />
+                </li>
+                <li>
+                  <img src="./assets/img_about_us/twitter.png" alt="twitter" />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img_about_us/linkedin.png"
+                    alt="linkedin"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="card_designer">
+              <img
+                class="foto_card"
+                src="./assets/img_about_us/scolara.png"
+                alt="adam jensen"
+                width="300"
+                height="300"
+              />
+              <h3 class="name_card">Scolara Visari</h3>
+              <a class="text_card"
+                >Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet
+                turpis, et consequat felis. Quisque condimentum.</a
+              >
+
+              <ul class="links_social_media">
+                <li>
+                  <img
+                    src="./assets/img_about_us/facebook.png"
+                    alt="facebook"
+                  />
+                </li>
+                <li>
+                  <img src="./assets/img_about_us/google.png" alt="google" />
+                </li>
+                <li>
+                  <img src="./assets/img_about_us/twitter.png" alt="twitter" />
+                </li>
+                <li>
+                  <img
+                    src="./assets/img_about_us/linkedin.png"
+                    alt="linkedin"
+                  />
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="contact_info_phone ">
-            <img src="./assets/img_contact_info/phone.png" alt="phone" />
-            <a class="phone_link" href="tel:+035283318635">03528 331 86 35</a>
-          </div>
-          <div class="contact_info_email ">
-            <img src="./assets/img_contact_info/mail.png" alt="mail" />
-            <a class="email_link" href="mailto:info@singolo.com"
-              >info@singolo.com</a
+        </article>
+      </section>
+      <section class="registration" id="registrationBlock">
+        <article class="top_registration">
+          <h2 class="header_registration">Get a Quote</h2>
+          <p class="text_registration">
+            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum.
+            Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget
+            lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo,
+            tortor mauris condimentum nibh.
+          </p>
+        </article>
+        <article class="form_info ">
+          <div class="form_registration">
+            <form
+              class="form"
+              action="#"
+              method="POST"
+              onsubmit="return checkForm()"
+              id="form"
             >
+              <input
+                class="input_form"
+                type="text"
+                name="username"
+                id="inputUsername"
+                placeholder="Name (Required)"
+                required
+                pattern="[A-Za-z]{1,32}"
+                minlength="2"
+                maxlength="30"
+                color="#f48c8f"
+              />
+              <input
+                class="input_form"
+                type="email"
+                name="useremail"
+                placeholder="Email (Required)"
+                id="inputEmail"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              />
+              <input
+                class="input_form"
+                type="text"
+                name="subject"
+                id="inputSubject"
+                placeholder="Subject"
+              />
+              <textarea
+                class="input_form textarea"
+                name="message"
+                id="inputTextarea"
+                cols="10"
+                rows="30"
+                placeholder="Describe your project in detail..."
+              ></textarea>
+              <button class="input_form submit" id="btnSubmit" type="submit">
+                Submit
+              </button>
+            </form>
           </div>
+          <div class="contact_info" id="contact">
+            <h3 class="contact_info_header">Contact Information</h3>
+            <p class="contact_info_text">
+              Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh.
+              Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla
+              sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et
+              consequat felis.
+            </p>
+
+            <div class="contact_info_address  ">
+              <img
+                class="img_location"
+                src="./assets/img_contact_info/location.png"
+                alt="location"
+              />
+              <p class="address_text">Elm St. 14/05 Lost City</p>
+            </div>
+            <div class="contact_info_phone ">
+              <img src="./assets/img_contact_info/phone.png" alt="phone" />
+              <a class="phone_link" href="tel:+035283318635">03528 331 86 35</a>
+            </div>
+            <div class="contact_info_email ">
+              <img src="./assets/img_contact_info/mail.png" alt="mail" />
+              <a class="email_link" href="mailto:info@singolo.com"
+                >info@singolo.com</a
+              >
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer class="footer">
+        <div class="layout-2-column">
+          <span class="footer_short_info"
+            >&copy; Copyright 2013 · by PSDchat.com</span
+          >
+          <ul class="footer_links_social_media">
+            <li>
+              <img src="./assets/img_footer/facebook.png" alt="facebook" />
+            </li>
+            <li>
+              <img src="./assets/img_footer/google.png" alt="google" />
+            </li>
+            <li>
+              <img src="./assets/img_footer/twitter.png" alt="twitter" />
+            </li>
+            <li>
+              <img src="./assets/img_footer/linkedin.png" alt="linkedin" />
+            </li>
+          </ul>
         </div>
-      </article>
-    </section>
-    <footer class="footer">
-      <div class="layout-2-column">
-        <span class="footer_short_info"
-          >&copy; Copyright 2013 · by PSDchat.com</span
-        >
-        <ul class="footer_links_social_media">
-          <li>
-            <img src="./assets/img_footer/facebook.png" alt="facebook" />
-          </li>
-          <li>
-            <img src="./assets/img_footer/google.png" alt="google" />
-          </li>
-          <li>
-            <img src="./assets/img_footer/twitter.png" alt="twitter" />
-          </li>
-          <li>
-            <img src="./assets/img_footer/linkedin.png" alt="linkedin" />
-          </li>
-        </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
