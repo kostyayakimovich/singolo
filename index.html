@@ -12,28 +12,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="wrap">
-      <header class="header">
-        <section class="header_content">
-          <div class="logo">
-            <h1>singolo<span>*</span></h1>
-          </div>
-          <nav class="header_navigation">
-            <ul class="navigation" id="menu">
-              <li class="item_menu"><a href="#">home</a></li>
-              <span class="dot">.</span>
-              <li class="item_menu"><a href="#services">services</a></li>
-              <span class="dot">.</span>
-              <li class="item_menu"><a href="#portfolio">portfolio</a></li>
-              <span class="dot">.</span>
-              <li class="item_menu"><a href="#about">about</a></li>
-              <span class="dot">.</span>
-              <li class="item_menu"><a href="#contact">contact</a></li>
-            </ul>
-          </nav>
-        </section>
-      </header>
-      <section class="slider" id="slider">
+    <div class="wrap" id="wrap">
+      <div class="header_wrap" id="headerWrap"></div>
+
+      <section class="slider " id="slider">
         <div class="container_slide2" id="containerSlide2">
           <div class="slide2">
             <img
@@ -102,6 +84,7 @@
           </div>
         </div>
       </section>
+
       <section class="servis_content" id="services">
         <article class="servis_content_description">
           <h2>Our Services</h2>
@@ -465,6 +448,37 @@
           </ul>
         </div>
       </footer>
+      <header class="header" id="header">
+        <section class="header_content" id="headerContent">
+          <div class="burger" id="burger">
+            <img
+              class="img_buger"
+              src="./assets/img_singolo1/Burger-menu-icon.png"
+              alt="icon burger"
+            />
+          </div>
+          <div class="logo">
+            <h1>singolo<span>*</span></h1>
+          </div>
+          <nav class="header_navigation" id="headerNavigation">
+            <ul class="navigation" id="menu">
+              <li class="item_menu ">
+                <a class="active" href="#slider">home</a>
+              </li>
+              <span class="dot">.</span>
+              <li class="item_menu"><a href="#services">services</a></li>
+              <span class="dot">.</span>
+              <li class="item_menu"><a href="#portfolio">portfolio</a></li>
+              <span class="dot">.</span>
+              <li class="item_menu"><a href="#about">about</a></li>
+              <span class="dot">.</span>
+              <li class="item_menu">
+                <a href="#registrationBlock">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </header>
     </div>
     <script src="script.js"></script>
   </body>

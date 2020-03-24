@@ -1,4 +1,5 @@
 const MENU = document.getElementById("menu");
+const WRAP = document.getElementById("wrap");
 const sliderLeft1 = document.getElementById("sliderLeft1");
 const sliderRight1 = document.getElementById("sliderRight1");
 const sliderLeft2 = document.getElementById("sliderLeft2");
@@ -26,6 +27,10 @@ const messageDescription = document.createElement("p");
 const resultDescription = document.createElement("span");
 const resultSubject = document.createElement("span");
 const containerSlide1 = document.getElementById("containerSlide1");
+const header = document.getElementById("header");
+const headerWrap = document.getElementById("headerWrap");
+const headerContent = document.getElementById("headerContent");
+const headerNavigation = document.getElementById("headerNavigation");
 const imgPortfolioBox = [
   { name: "design1", src: "./assets/img_portfolio/ship.jpg" },
   { name: "design2", src: "./assets/img_portfolio/princess.jpg" },
@@ -45,17 +50,55 @@ let countClickArrow = 0;
 let countVerticalPhone = 1;
 let countHorizontalPhone = 1;
 
-img.setAttribute("src", "./assets/img_singolo1/Slider.png");
-img.className = "slide2";
-
-//SLIDER.append(img);
 //header navigation
 MENU.addEventListener("click", event => {
   MENU.querySelectorAll("li>a").forEach(el => el.classList.remove("active"));
   event.target.classList.add("active");
 });
-//slider
 
+document.addEventListener("scroll", onScroll);
+function onScroll(event) {
+  currentPosition = window.scrollY;
+  const links = document.querySelectorAll(".item_menu a");
+  document.querySelectorAll("#wrap>section").forEach(el => {
+    if (
+      el.offsetTop <= currentPosition &&
+      el.offsetTop + el.offsetTop > currentPosition
+    ) {
+      links.forEach(a => {
+        a.classList.remove("active");
+        if (el.getAttribute("id") === a.getAttribute("href").substring(1)) {
+          a.classList.add("active");
+        }
+      });
+    }
+  });
+}
+//burger navigation
+let countBurger = 90;
+burger.addEventListener("click", event => {
+  event.target.style.transform = `rotate(${countBurger}deg)`;
+
+  countBurger > 180 ? (countBurger = 0) : (countBurger += 90);
+  if (countBurger === 0 || countBurger === 180) {
+    header.style.height = "100%";
+    header.style.width = "80%";
+    headerContent.style.background = "#0008";
+    headerWrap.style.display = "none";
+
+    headerNavigation.style.display = "block";
+  } else {
+    header.style.height = " 89px";
+    header.style.width = "100%";
+    headerWrap.style.display = "block";
+    headerContent.style.background = "";
+    headerNavigation.style.display = "none";
+  }
+});
+
+//slider
+img.setAttribute("src", "./assets/img_singolo1/Slider.png");
+img.className = "slide2";
 sliderLeft1.addEventListener("click", event => {
   let interval = setInterval(function() {
     if (containerSlide1.style.left === "-1020px") {
