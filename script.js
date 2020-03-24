@@ -31,6 +31,7 @@ const header = document.getElementById("header");
 const headerWrap = document.getElementById("headerWrap");
 const headerContent = document.getElementById("headerContent");
 const headerNavigation = document.getElementById("headerNavigation");
+const imgburger = document.getElementById("imgBurger");
 const imgPortfolioBox = [
   { name: "design1", src: "./assets/img_portfolio/ship.jpg" },
   { name: "design2", src: "./assets/img_portfolio/princess.jpg" },
@@ -49,11 +50,14 @@ let boxRandom12 = [];
 let countClickArrow = 0;
 let countVerticalPhone = 1;
 let countHorizontalPhone = 1;
-
+let countBurger = 90;
 //header navigation
+
 MENU.addEventListener("click", event => {
   MENU.querySelectorAll("li>a").forEach(el => el.classList.remove("active"));
   event.target.classList.add("active");
+  let currentWidth = document.documentElement.clientWidth;
+  if (currentWidth < 768) imgBurger.click();
 });
 
 document.addEventListener("scroll", onScroll);
@@ -75,17 +79,14 @@ function onScroll(event) {
   });
 }
 //burger navigation
-let countBurger = 90;
-burger.addEventListener("click", event => {
+imgBurger.addEventListener("click", event => {
   event.target.style.transform = `rotate(${countBurger}deg)`;
-
   countBurger > 180 ? (countBurger = 0) : (countBurger += 90);
   if (countBurger === 0 || countBurger === 180) {
     header.style.height = "100%";
     header.style.width = "80%";
     headerContent.style.background = "#0008";
     headerWrap.style.display = "none";
-
     headerNavigation.style.display = "block";
   } else {
     header.style.height = " 89px";

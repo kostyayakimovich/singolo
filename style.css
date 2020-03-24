@@ -701,7 +701,7 @@ img.active_portfolio_img {
 
 @media screen and (max-width: 1020px) {
   .wrap {
-    max-width: 100%;
+    max-width: 1020px;
   }
   .header {
     max-width: 100%;
@@ -724,8 +724,7 @@ img.active_portfolio_img {
     max-width: 205px;
     height: 260px;
     left: 71px;
-    top: 232px;
-
+    top: 50%;
     margin-right: 40px;
     padding-top: 10px;
   }
@@ -733,8 +732,6 @@ img.active_portfolio_img {
     position: static;
     width: 205px;
     height: 31px;
-    left: 0px;
-    top: 0px;
     font-size: 24px;
     line-height: 29px;
     letter-spacing: -0.035em;
@@ -745,14 +742,11 @@ img.active_portfolio_img {
   .logo {
     position: absolute;
     top: 40px;
-    left: 265px;
+    left: 40%;
   }
   .header_content {
     width: 1020px;
   }
 }
 @media screen and (max-width: 374px) {
-  .logo {
-    left: 90px;
-  }
 }
