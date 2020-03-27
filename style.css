@@ -504,7 +504,7 @@ img.active_portfolio_img {
 .form_info {
   padding-top: 45px;
   width: 940px;
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
@@ -513,8 +513,10 @@ img.active_portfolio_img {
   grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
   grid-gap: 13.5px;
 }
-.input_form {
+.form_registration {
   width: 605px;
+}
+.input_form {
   height: 38px;
   border: 0;
   padding-left: 14px;
@@ -611,7 +613,8 @@ img.active_portfolio_img {
   background-color: #72201b;
 }
 .contact_info {
-  margin-left: 20px;
+  width: 300px;
+  height: 418px;
 }
 .contact_info_header {
   font-size: 18px;
@@ -634,10 +637,10 @@ img.active_portfolio_img {
 .contact_info_address {
   padding: 24px 0 0 4px;
 }
+
 .address_text {
   display: inline-block;
-}
-.address_text {
+
   padding-left: 8px;
   font-size: 12px;
   line-height: 22px;
@@ -676,17 +679,18 @@ img.active_portfolio_img {
 }
 .footer {
   width: 1020px;
-  min-height: 76px;
+  height: 76px;
   background-color: #2d303a;
 }
 .layout-2-column {
   width: 940px;
-  padding: 18px 40px 0 40px;
+  padding: 18px 0 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .footer_short_info {
+  margin-left: 40px;
   padding-left: 1px;
   font-size: 12px;
   line-height: 22px;
@@ -695,6 +699,7 @@ img.active_portfolio_img {
   letter-spacing: -0.02em;
 }
 .footer_links_social_media {
+  margin-right: 40px;
   padding-top: 4px;
   list-style-type: none;
   display: grid;
@@ -837,6 +842,45 @@ img.active_portfolio_img {
     height: calc(20vh / 1.75);
     text-overflow: ellipsis;
   }
+  .registration {
+    width: 100%;
+    height: 100%;
+  }
+  .top_registration {
+    width: 100%;
+  }
+  .header_registration {
+    margin: 0 40px;
+  }
+  .text_registration {
+    height: 100%;
+    margin: 0 40px;
+  }
+  .form_registration {
+    width: 100%;
+    margin: 0 40px;
+  }
+  .form_info {
+    width: 100%;
+  }
+  .contact_info {
+    width: 50%;
+    height: 100%;
+    margin-right: 40px;
+  }
+  .form button {
+    width: 90px;
+    padding-left: 14px;
+  }
+  .input_form {
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+  }
+  .layout-2-column {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -940,6 +984,47 @@ img.active_portfolio_img {
   .card_designer {
     width: 300px;
   }
+  .header_registration {
+    margin: 0 30px;
+  }
+  .text_registration {
+    margin: 0 30px;
+  }
+  .form_registration {
+    margin: 0;
+  }
+  .form {
+    margin: 0 30px;
+  }
+  .input_form {
+    padding: 0;
+    text-indent: 14px;
+  }
+  .form button {
+    width: 100%;
+    text-align: center;
+  }
+  .form_info {
+    flex-direction: column;
+  }
+  .contact_info {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+  }
+  .contact_info_header,
+  .contact_info_text,
+  .contact_info_address,
+  .contact_info_phone,
+  .contact_info_email {
+    margin: 0 30px;
+  }
+  .footer_short_info {
+    display: none;
+  }
+  .footer_links_social_media {
+    margin: 0 auto;
+  }
 }
 @media screen and (max-width: 374px) {
   .logo {
@@ -985,5 +1070,16 @@ img.active_portfolio_img {
   }
   .card_designer {
     width: 90%;
+  }
+
+  .header_registration,
+  .text_registration,
+  .form,
+  .contact_info_header,
+  .contact_info_text,
+  .contact_info_address,
+  .contact_info_phone,
+  .contact_info_email {
+    margin: 0 10px;
   }
 }
