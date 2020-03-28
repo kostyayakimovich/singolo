@@ -239,7 +239,7 @@ registration.append(messageBlock);
 message.setAttribute("id", "message");
 message.className = "message";
 messageBlock.append(message);
-//header
+//header message
 
 messageHeader.innerText = "Письмо отправлено";
 message.append(messageHeader);

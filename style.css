@@ -574,7 +574,7 @@ img.active_portfolio_img {
   background-color: #72201b;
 }
 .message_block {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -611,6 +611,9 @@ img.active_portfolio_img {
   font-family: "Lato", Verdana, serif;
   font-weight: 900;
   word-spacing: 0.1em;
+}
+.message .input_form {
+  width: 55px;
 }
 .closeBtn:hover {
   background-color: #72201b;
@@ -1035,6 +1038,9 @@ img.active_portfolio_img {
   .footer_links_social_media {
     margin: 0 auto;
   }
+  .message {
+    left: 20%;
+  }
 }
 @media screen and (max-width: 374px) {
   .logo {
@@ -1065,9 +1071,11 @@ img.active_portfolio_img {
   .header_portfolio {
     padding: 68px 5px 0 5px;
   }
+  .wrap_top_portfolio {
+    margin: 0 10px;
+  }
   .text_portfolio {
-    width: 295px;
-    padding: 29px 0 0 5px;
+    width: 100%;
   }
   .navigation_portfolio {
     padding: 0 5px;
@@ -1091,5 +1099,8 @@ img.active_portfolio_img {
   .contact_info_phone,
   .contact_info_email {
     margin: 0 10px;
+  }
+  .message {
+    left: 11%;
   }
 }
