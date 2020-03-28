@@ -731,9 +731,14 @@ img.active_portfolio_img {
   .header_content {
     width: 100%;
   }
+  .header_navigation {
+    width: 374px;
+
+    padding-top: 4px;
+  }
   .slider {
     width: 100%;
-    height: calc(100vw / 1.75);
+    height: calc(103vw / 1.75);
   }
   .container_slide2 {
     width: 100%;
@@ -756,7 +761,7 @@ img.active_portfolio_img {
   }
 
   .slider_images {
-    margin: 0 auto;
+    margin: 5px 77px 0 77px;
   }
   .square_phone1,
   .square_phone2 {
@@ -765,23 +770,36 @@ img.active_portfolio_img {
   .vertical_phone {
     width: 180.85px;
     height: 363.74px;
+    padding: 38px 16px 38px 7px;
   }
   .horisontal_phone {
     height: 180.93px;
     width: 364.21px;
   }
   .slider_control_left {
-    top: 45%;
-    left: 20px;
+    top: 48%;
+    left: 29px;
   }
 
   .slider_control_right {
-    top: 45%;
-    right: 20px;
+    top: 48%;
+    right: 29px;
   }
   .servis_content {
     width: 100%;
     height: 100%;
+  }
+  .servis_content_first_row {
+    margin: 0 20px 0 30px;
+  }
+  .servis_content_second_row {
+    margin: 0px 60px 0 5px;
+  }
+  .content_item {
+    height: 145px;
+  }
+  .servis_content_description {
+    padding: 50px 40px 32px 40px;
   }
   .servis_content_description p {
     width: 100%;
@@ -790,7 +808,9 @@ img.active_portfolio_img {
   .wrap_content_row {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 16px;
   }
+
   .servis_content_first_row .layout-3-column {
     flex-direction: column;
   }
@@ -801,10 +821,17 @@ img.active_portfolio_img {
     width: 100%;
     height: 100%;
   }
+  .wrap_top_portfolio {
+    margin: 0 40px 39px 40px;
+  }
+  .navigation_portfolio {
+    margin-bottom: 16px;
+  }
   .layout-4-column {
     width: 720px;
     margin: auto;
     height: 100%;
+    margin-bottom: 56px;
   }
   .top_portfolio {
     width: 100%;
@@ -813,9 +840,14 @@ img.active_portfolio_img {
     width: 100%;
     height: 100%;
   }
+  .img_portfolio {
+    width: 219px;
+    height: 184px;
+  }
   .about_us {
     width: 100%;
     height: 100%;
+    padding-bottom: 57px;
   }
   .top_about_us {
     width: 100%;
@@ -823,14 +855,19 @@ img.active_portfolio_img {
   }
   .header_about_us {
     margin-left: 40px;
+    padding-top: 64px;
   }
   .text_about_us {
     height: 100%;
     margin: 0 40px;
+    padding: 27px 0 28px 0;
   }
   .cards_about_us {
     width: 100%;
     height: 100%;
+  }
+  .name_card {
+    margin: 6px 0;
   }
   .cards_about_us .layout-3-column {
     margin: 0 33px;
@@ -846,8 +883,12 @@ img.active_portfolio_img {
   }
   .text_card {
     width: 100%;
-    height: calc(20vh / 1.75);
+    height: calc(17vh / 1.75);
     text-overflow: ellipsis;
+    margin: 0;
+  }
+  .links_social_media {
+    grid-gap: 9px;
   }
   .registration {
     width: 100%;
@@ -858,6 +899,7 @@ img.active_portfolio_img {
   }
   .header_registration {
     margin: 0 40px;
+    padding-top: 61px;
   }
   .text_registration {
     height: 100%;
@@ -869,6 +911,15 @@ img.active_portfolio_img {
   }
   .form_info {
     width: 100%;
+    padding-top: 23px;
+  }
+  .form {
+    grid-template-rows: 1fr 1fr 1fr 4fr 1fr;
+    grid-gap: 11.5px;
+    padding-bottom: 43px;
+  }
+  .form .textarea {
+    height: 150px;
   }
   .contact_info {
     width: 50%;
@@ -928,16 +979,25 @@ img.active_portfolio_img {
   .logo {
     position: absolute;
     top: 30px;
-    left: 35%;
+    left: 28%;
+  }
+  .slider_control_left {
+    top: 45%;
+  }
+  .slider_control_right {
+    top: 45%;
   }
   .burger {
     top: 25px;
+  }
+  .slider_images {
+    margin: 5px 0px 0 35px;
   }
 
   .vertical_phone {
     width: 88.3px;
     height: 177.61px;
-    padding-right: 15px;
+    padding-right: 26px;
   }
   .horisontal_phone {
     padding-left: 0;
@@ -956,62 +1016,107 @@ img.active_portfolio_img {
     flex-direction: column;
   }
   .servis_content_description {
-    padding: 40px;
+    padding: 33px;
+    padding-bottom: 27px;
+  }
+  .servis_content_first_row {
+    margin: 0 5px 0 0px;
+  }
+  .servis_content_second_row {
+    margin: 0 5px 0 0px;
+  }
+  .content_item {
+    height: 119px;
+  }
+  .wrap_content_row {
+    margin-bottom: 0;
   }
   .content_item_text p {
     width: 100%;
   }
   .layout-4-column {
     width: 322px;
+
+    height: 568px;
+    overflow: hidden;
+    margin-bottom: 26px;
   }
   .img_portfolio {
     width: 151px;
-    height: 128px;
+    height: 131px;
     margin: 5px;
   }
 
   .navigation_portfolio {
-    padding: 0 20px;
+    padding: 0 30px;
+    margin-bottom: 19px;
   }
   .wrap_top_portfolio {
-    margin: 0 20px;
+    margin: 0 30px 14px 30px;
   }
   .header_portfolio {
-    padding-top: 50px;
+    padding-top: 48px;
+  }
+  .text_portfolio {
+    padding: 27px 0 0 0;
   }
   .header_about_us {
-    margin-left: 20px;
-    padding-top: 50px;
+    margin-left: 30px;
+    padding-top: 43px;
   }
   .about_us {
     padding-bottom: 20px;
   }
   .text_about_us {
-    margin: 0 20px;
+    margin: 0 30px;
+    padding-bottom: 51px;
   }
   .cards_about_us .layout-3-column {
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
   .card_designer {
-    width: 300px;
+    width: 314px;
+  }
+  .name_card {
+    margin-top: 11px;
+    margin-bottom: 3px;
+  }
+  .text_card {
+    height: calc(22vh / 1.75);
+  }
+  .links_social_media {
+    grid-gap: 2px;
   }
   .header_registration {
     margin: 0 30px;
+    padding-top: 52px;
   }
   .text_registration {
     margin: 0 30px;
-    padding-top: 50px;
+    padding-top: 28px;
+  }
+  .form_info {
+    padding-top: 52px;
+    padding-bottom: 20px;
   }
   .form_registration {
     margin: 0;
   }
   .form {
     margin: 0 30px;
+    padding-bottom: 26px;
   }
   .input_form {
     padding: 0;
     text-indent: 14px;
+  }
+  .contact_info_address {
+    padding: 10px 0 0 4px;
+  }
+  .form .textarea {
+    height: 156px;
   }
   .form button {
     width: 100%;
@@ -1067,7 +1172,12 @@ img.active_portfolio_img {
   .layout-4-column {
     width: 156px;
   }
-
+  .slider_images {
+    margin: 5px 0px 0 18px;
+  }
+  .text_card {
+    margin-bottom: 10px;
+  }
   .header_portfolio {
     padding: 68px 5px 0 5px;
   }
