@@ -13,7 +13,6 @@
 .header_wrap {
   height: 89px;
   width: 1020px;
-
   border-bottom: solid 6px #323746;
 }
 .header {
@@ -21,12 +20,13 @@
   top: 0;
   height: 89px;
   width: 1020px;
-  background-color: #2d303a;
+  background: #2d303a;
   border-bottom: solid 6px #323746;
 }
 .header_content {
-  width: 1020px;
+  width: 940px;
   height: 89px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -281,8 +281,11 @@
 .top_portfolio {
   width: 1020px;
 }
+.wrap_top_portfolio {
+  margin: 0 40px;
+}
 .header_portfolio {
-  padding: 68px 40px 0 40px;
+  padding-top: 68px;
   font-size: 30px;
   line-height: 18px;
   color: #666d89;
@@ -293,7 +296,7 @@
 }
 
 .text_portfolio {
-  padding: 29px 40px 0 40px;
+  padding: 29px 0 0 0;
   height: 39px;
   font-size: 18px;
   line-height: 30px;
@@ -718,6 +721,7 @@ img.active_portfolio_img {
   .header {
     width: 100%;
   }
+
   .header_wrap {
     width: 100%;
   }
@@ -800,7 +804,7 @@ img.active_portfolio_img {
     height: 100%;
   }
   .top_portfolio {
-    width: 768px;
+    width: 100%;
   }
   .text_portfolio {
     width: 100%;
@@ -884,10 +888,10 @@ img.active_portfolio_img {
 }
 @media screen and (max-width: 767px) {
   .header {
-    height: 71px;
+    height: 66px;
   }
   .header_wrap {
-    height: 71px;
+    height: 66px;
   }
   .burger {
     display: block;
@@ -903,7 +907,7 @@ img.active_portfolio_img {
     max-width: 205px;
     height: 260px;
     left: 71px;
-    top: 50%;
+    top: 30%;
     margin-right: 40px;
     padding-top: 10px;
   }
@@ -921,14 +925,12 @@ img.active_portfolio_img {
   .logo {
     position: absolute;
     top: 30px;
-    left: 30%;
+    left: 35%;
   }
   .burger {
     top: 25px;
   }
-  .header_content {
-    width: 100%;
-  }
+
   .vertical_phone {
     width: 88.3px;
     height: 177.61px;
@@ -950,6 +952,9 @@ img.active_portfolio_img {
   .wrap_content_row {
     flex-direction: column;
   }
+  .servis_content_description {
+    padding: 40px;
+  }
   .content_item_text p {
     width: 100%;
   }
@@ -961,18 +966,22 @@ img.active_portfolio_img {
     height: 128px;
     margin: 5px;
   }
-  .header_portfolio {
-    padding: 68px 20px 0 20px;
-  }
-  .text_portfolio {
-    width: 338px;
-    padding: 29px 0 0 20px;
-  }
+
   .navigation_portfolio {
     padding: 0 20px;
   }
+  .wrap_top_portfolio {
+    margin: 0 20px;
+  }
+  .header_portfolio {
+    padding-top: 50px;
+  }
   .header_about_us {
     margin-left: 20px;
+    padding-top: 50px;
+  }
+  .about_us {
+    padding-bottom: 20px;
   }
   .text_about_us {
     margin: 0 20px;
@@ -989,6 +998,7 @@ img.active_portfolio_img {
   }
   .text_registration {
     margin: 0 30px;
+    padding-top: 50px;
   }
   .form_registration {
     margin: 0;

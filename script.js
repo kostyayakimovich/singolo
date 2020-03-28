@@ -86,13 +86,17 @@ imgBurger.addEventListener("click", event => {
     header.style.height = "100%";
     header.style.width = "80%";
     headerContent.style.background = "#0008";
+    headerContent.style.width = "100vw";
+    headerContent.style.height = "100vh";
     headerWrap.style.display = "none";
     headerNavigation.style.display = "block";
   } else {
-    header.style.height = " 89px";
+    header.style.height = " 66px";
     header.style.width = "100%";
     headerWrap.style.display = "block";
     headerContent.style.background = "";
+    headerContent.style.width = "100%";
+    headerContent.style.height = "66px";
     headerNavigation.style.display = "none";
   }
 });
